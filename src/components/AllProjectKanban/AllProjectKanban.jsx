@@ -15,19 +15,19 @@ const AllProjectKanban = ({ projectData }) => {
                 </div>
                 <div className='project-ticket-container'>
                     {
-                        projectData.filter((value) => value.Status == "Not Started").map((item, index) => {
+                        projectData.filter((value) => value.Status === "Not Started").map((item, index) => {
                             return (
                                 <div className='project-ticket' >
-                                <div className='project-name-div'>
-                                    <CardSvg /> <span className='title'>Project Name</span>
+                                    <div className='project-name-div'>
+                                        <CardSvg /> <span className='title'>Project Name</span>
                                     </div>
-                                    <ProgressMeter value = {item.Tasks} min ={0} max ={100}/>
+                                    <ProgressMeter value={item.Tasks} min={0} max={100} />
 
-                                    <div className='Date'><Calander/> {item.StartDate} - {item.EndDate}</div>
+                                    <div className='Date'><Calander /> {item.StartDate} - {item.EndDate}</div>
 
-                                    
 
-                            </div>
+
+                                </div>
 
 
                             )
@@ -54,12 +54,12 @@ const AllProjectKanban = ({ projectData }) => {
                                 <div className='project-ticket' >
                                     <div className='project-name-div'>
                                         <CardSvg /> <span className='title'>Project Name</span>
-                                        </div>
-                                        <ProgressMeter value = {item.Tasks} min ={0} max ={100}/>
+                                    </div>
+                                    <ProgressMeter value={item.Tasks} min={0} max={100} />
 
-                                        <div className='Date'><Calander/> {item.StartDate} - {item.EndDate}</div>
+                                    <div className='Date'><Calander /> {item.StartDate} - {item.EndDate}</div>
 
-                                        
+
 
                                 </div>
 
@@ -80,17 +80,17 @@ const AllProjectKanban = ({ projectData }) => {
                 </div>
                 <div className='project-ticket-container'>
                     {
-                        projectData.filter((value) => value.Status == "Archive").map((item, index) => {
+                        projectData.filter((value) => value.Status === "Archive").map((item, index) => {
                             return (
                                 <div className='project-ticket' >
                                     <div className='project-name-div'>
                                         <CardSvg /> <span className='title'>Project Name</span>
-                                        </div>
-                                        <ProgressMeter value = {item.Tasks} min ={0} max ={100}/>
+                                    </div>
+                                    <ProgressMeter value={item.Tasks} min={0} max={100} />
 
-                                        <div className='Date'><Calander/> {item.StartDate} - {item.EndDate}</div>
+                                    <div className='Date'><Calander /> {item.StartDate} - {item.EndDate}</div>
 
-                                        
+
 
                                 </div>
 
@@ -112,17 +112,17 @@ const AllProjectKanban = ({ projectData }) => {
                 </div>
                 <div className='project-ticket-container'>
                     {
-                        projectData.filter((value) => value.Status == "Completed").map((item, index) => {
+                        projectData.filter((value) => value.Status === "Completed").map((item, index) => {
                             return (
                                 <div className='project-ticket' >
                                     <div className='project-name-div'>
                                         <CardSvg /> <span className='title'>Project Name</span>
-                                        </div>
-                                        <ProgressMeter value = {item.Tasks} min ={0} max ={100}/>
+                                    </div>
+                                    <ProgressMeter value={item.Tasks} min={0} max={100} />
 
-                                        <div className='Date'><Calander/> {item.StartDate} - {item.EndDate}</div>
+                                    <div className='Date'><Calander /> {item.StartDate} - {item.EndDate}</div>
 
-                                        
+
 
                                 </div>
 

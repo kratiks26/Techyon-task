@@ -7,7 +7,6 @@ import FilterIcon from '../../svg/FilterIcon';
 import ThreeDotsForOptions from '../../svg/ThreeDotsForOptions';
 
 const Filters = ({projectName}) => {
-    // const { ProjectName } = props
     const [projectOverview, setProjectOverview] = useState("kanban");
     const [selectedProject, setSelectedProject] = useState(0);
     const [isDropDownActive, setIsDropDownActive] = useState(false)
