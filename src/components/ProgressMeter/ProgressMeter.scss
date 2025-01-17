@@ -16,9 +16,7 @@
       border: none;
       border-radius: 5px;
       background: #e0e0e0;  
-    //   opacity: 100%;
   
-      /* Styling the filled portion */
       &::-webkit-meter-bar {
         background: #e0e0e0;
         border-radius: 7px;
@@ -30,13 +28,6 @@
         border-radius: 5px;
       }
   
-    //   &::-webkit-meter-suboptimum-value {
-    //     background: #f1c40f;
-    //   }
-  
-    //   &::-webkit-meter-even-less-good-value {
-    //     background: #e74c3c;
-    //   }
     }
   
     .progress-text {
