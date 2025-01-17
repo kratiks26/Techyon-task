@@ -14,7 +14,7 @@ const AllTaskKanban = ({ projectData }) => {
                 </div>
                 <div className='task-ticket-container'>
                     {
-                        projectData.filter((value) => value.Status ==== "Not Started").map((item, index) => {
+                        projectData.filter((value) => value.Status === "Not Started").map((item, index) => {
                             return (
                                 <div className='project-ticket' >
                                 <div className='project-name-div'>
