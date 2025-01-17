@@ -4,7 +4,6 @@ import "./ProjectOverview.scss"
 import Filters from '../Filters/Filters';
 import AllProjectKanban from '../AllProjectKanban/AllProjectKanban';
 import AllTaskKanban from '../AllTaskKanban/AllTaskKanban';
-import AllProjectTable from '../AllProjectTable/AllProjectTable';
 
 const ProjectOverview = () => {
     const [toggleSectionIsActive, setToggleSectionIsActive] = useState(1);
@@ -192,11 +191,11 @@ const ProjectOverview = () => {
                         </div>
                     </div>
                     <div className='right-toggle-section'>
-                        <span className={`toggle-section ${(toggleSectionIsActive == 0) && 'toggle-section-isActive'}`} onClick={() => (toggleSectionIsActive == 1 ? setToggleSectionIsActive(0) : "")} >
+                        <span className={`toggle-section ${(toggleSectionIsActive === 0) && 'toggle-section-isActive'}`} onClick={() => (toggleSectionIsActive === 1 ? setToggleSectionIsActive(0) : "")} >
                             Dashboarad
                         </span>
                         /
-                        <span className={`toggle-section ${(toggleSectionIsActive == 1) && 'toggle-section-isActive'}`} onClick={() => (toggleSectionIsActive == 0 ? setToggleSectionIsActive(1) : "")} >
+                        <span className={`toggle-section ${(toggleSectionIsActive === 1) && 'toggle-section-isActive'}`} onClick={() => (toggleSectionIsActive === 0 ? setToggleSectionIsActive(1) : "")} >
                             Project Overview
                         </span>
                     </div>

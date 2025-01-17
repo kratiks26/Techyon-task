@@ -49,7 +49,7 @@ const AllProjectKanban = ({ projectData }) => {
                 </div>
                 <div className='project-ticket-container'>
                     {
-                        projectData.filter((value) => value.Status == "In Progress").map((item, index) => {
+                        projectData.filter((value) => value.Status === "In Progress").map((item, index) => {
                             return (
                                 <div className='project-ticket' >
                                     <div className='project-name-div'>

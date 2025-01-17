@@ -31,15 +31,15 @@ const Filters = ({projectName}) => {
             </div>
             <div className='right-side-options'>
                 <div className='overview-options'>
-                    <div className={`list-Kanban-button ${projectOverview == "list" && "isActive"}`} onClick={() => (projectOverview == "kanban" ? setProjectOverview("list") : "")}>
+                    <div className={`list-Kanban-button ${projectOverview === "list" && "isActive"}`} onClick={() => (projectOverview === "kanban" ? setProjectOverview("list") : "")}>
                         <ListView />
                     </div>
-                    <div className={`list-Kanban-button ${projectOverview == "kanban" && "isActive"}`} onClick={() => (projectOverview == "list" ? setProjectOverview("kanban") : "")}>
+                    <div className={`list-Kanban-button ${projectOverview === "kanban" && "isActive"}`} onClick={() => (projectOverview === "list" ? setProjectOverview("kanban") : "")}>
                         <GridView />
                     </div>
                 </div>
                 <div className='other-two'>
-                    <div className={`filter-option ${projectOverview == "kanban" ? " filter-disable" : ""} `}>
+                    <div className={`filter-option ${projectOverview === "kanban" ? " filter-disable" : ""} `}>
                         <FilterIcon />
                     </div>
                     <div className='three-dots'> <ThreeDotsForOptions /> </div>

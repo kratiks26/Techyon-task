@@ -20,7 +20,7 @@ const Header = () => {
                 <div><SettingsIcon /></div>
                 <div><Announcement /></div>
                 <div><Notification /></div>
-                <div className='user-options'><img className='icon-image' src={IconImage} /> <DownArrow /> </div>
+                <div className='user-options'><img className='icon-image' src={IconImage} alt="Descriptive text" /> <DownArrow /> </div>
             </div>
         </div>
     )
