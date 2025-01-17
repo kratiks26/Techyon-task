@@ -1,0 +1,110 @@
+.filters-container {
+    display: flex;
+    width: Fill (1, 180px) px;
+    height: Hug (40px) px;
+    gap: 0px;
+    border: 0px 0px 1px 0px;
+    justify-content: space-between;
+    opacity: 0px;
+
+    .project-drop-down {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: Hug (140px) px;
+      height: Hug (24px) px;
+      gap: 10px;
+      opacity: 0px;
+      //styleName: SH2_SemiBold_Inter20;
+      font-family: Inter;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 24.2px;
+      letter-spacing: 0.0015em;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: rgba(45, 68, 110, 1);
+
+      .project-container {
+        position: relative;
+        .project-box{
+            display: none;
+            border: 1px solid  rgba(45, 68, 110, 1);
+            border-radius: 5px;
+            position: absolute;
+            width: 130px;
+            z-index : 1;
+            background-color: rgba(255, 255, 255, 1) ;
+            .project-options{
+                font-size: 15px;
+
+            }
+        }
+        .project-box-active{
+            display: block
+        }
+      }
+    }
+    .right-side-options {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: Hug (134px) px;
+      height: Hug (40px) px;
+      gap: 10px;
+      opacity: 0px;
+      .overview-options {
+        display: flex;
+        width: Hug (90px) px;
+        height: Hug (40px) px;
+        gap: 10px;
+        opacity: 0px;
+        .list-Kanban-button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: Fixed (40px) px;
+          height: Fixed (40px) px;
+          padding: 5px;
+          gap: 8px;
+          border-radius: 5px;
+          // border: 0.5px 0px 0px 0px;
+          opacity: 0px;
+          background: rgba(255, 255, 255, 1);
+          border: 0.5px solid rgba(204, 204, 204, 1);
+          box-shadow: 0px 1px 5px 0px rgba(45, 68, 110, 0.1);
+        }
+        .isActive {
+          background-color: rgba(45, 68, 110, 1);
+          border: 0.5px solid rgba(45, 68, 110, 1);
+        }
+      }
+      .other-two {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: Hug (78px) px;
+        height: Hug (34px) px;
+        gap: 10px;
+        opacity: 0px;
+
+        .filter-option {
+          display: flex;
+          width: Hug (44px) px;
+          height: Hug (34px) px;
+          gap: 10px;
+          opacity: 0px;
+        }
+        .filter-disable {
+          display: none;
+        }
+        .three-dots {
+          width: 24px;    
+          height: 24px;
+          gap: 0px;
+          opacity: 0px;
+        }
+      }
+    }
+  }

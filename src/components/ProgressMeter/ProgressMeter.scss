@@ -1,0 +1,50 @@
+.progress-meter-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+  
+    label {
+      font-size: 14px;
+      font-weight: bold;
+    }
+  
+    meter {
+      width: 224px;
+      height: 20px;
+      border: none;
+      border-radius: 5px;
+      background: #e0e0e0;  
+    //   opacity: 100%;
+  
+      /* Styling the filled portion */
+      &::-webkit-meter-bar {
+        background: #e0e0e0;
+        border-radius: 7px;
+      }
+  
+      &::-webkit-meter-optimum-value {
+        background: rgba(102, 204, 102, 1);
+        ;
+        border-radius: 5px;
+      }
+  
+    //   &::-webkit-meter-suboptimum-value {
+    //     background: #f1c40f;
+    //   }
+  
+    //   &::-webkit-meter-even-less-good-value {
+    //     background: #e74c3c;
+    //   }
+    }
+  
+    .progress-text {
+      font-size: 14px;
+      font-weight: bold;
+      color: #555;
+      position: absolute;
+      left: 50%
+    }
+  }
+  
